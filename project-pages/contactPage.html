@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+  <link rel="icon" href="../assets/images/1311.png" />
+  <title>Virtual Studios</title>
+  <meta name="description" content="Zhiqiang's College Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/utilities.css">
+
+  <script defer src="../js/script.js"></script>
+
+</head>
+
+<body class="contactPage">
+  <!-- NAVBAR -->
+  <div class="navbar" id="title">
+    <a class="nav-title-link" href="../index.html">
+      <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+      <span class="nav-title">Zhiqiang Li</span>
+      <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+      <a class="navButton" href="../index.html#about-section">
+        <span class="button-text">About Me</span>
+      </a>
+      <a class="navButton" href="./contactPage.html">
+        <span class="button-text">Contact Me</span>
+      </a>
+    </a>
+  </div>
+
+  <!-- MAIN PAGE CONTENT -->
+  <div class="contactPage">
+    <div class="header-text">Contact Me</div>
+    <div class="contactForm">
+      <form>
+        <h2>Send Message</h2>
+        <div class="inputBox">
+          <input type="text" id="name" required="required">
+          <span>Full Name</span>
+        </div>
+        <div class="inputBox">
+          <input type="text" id="email" required="required">
+          <span>Email</span>
+        </div>
+        <div class="inputBox">
+          <input type="text" id="subject" required="required">
+          <span>Subject</span>
+        </div>
+        <div class="inputBox">
+          <textarea required="required" id="message"></textarea>
+          <span>Type your Message...</span>
+        </div>
+        <div class="inputBox">
+          <input type="submit" name="" value="Send" id="btn">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</html>
