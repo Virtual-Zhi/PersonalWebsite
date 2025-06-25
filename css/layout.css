@@ -19,7 +19,7 @@ body {
 /* Main Page Layout */
 
 #main-content {
-  margin: 225px 425px;
+  margin: 100px 425px;
   display: flex;
   flex-direction: column;
   gap: 96px;
@@ -54,7 +54,7 @@ body {
 }
 
 .portfolio-header-image {
-  width: 100%;
+  width: 85%;
   height: auto;
 }
 
@@ -73,15 +73,24 @@ body {
 #about-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
 }
 
 .about-section-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 34px;
 }
 
+.about-image-content {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
 
 
 
@@ -261,21 +270,21 @@ div.contactPage {
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1600px) {
   #main-content {
-    margin: 105px 275px;
+    margin: 50px 275px;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1200px) {
   #main-content {
-    margin: 105px 175px;
+    margin: 70px 175px;
   }
 }
 
 /* Large devices (laptops/desktops, 1000px and below) */
 @media only screen and (max-width: 1000px) {
   #main-content {
-    margin: 105px 75px;
+    margin: 90px 75px;
   }
 }
 
@@ -297,7 +306,7 @@ div.contactPage {
 /* Small devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
   #main-content {
-    margin: 5px 20px;
+    margin: 20px 100px;
   }
 
   .project-card {
