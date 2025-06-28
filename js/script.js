@@ -1,4 +1,3 @@
-
 let prevScrollPos = window.pageYOffset;
 
 window.addEventListener('scroll', function () {
@@ -53,16 +52,68 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-document.getElementById('btn').addEventListener('click', function (e) {
-  e.preventDefault();
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var subject = document.getElementById("subject").value;
-  var message = document.getElementById("message").value;
-  var body = "Hello Zhiqiang,%0D%0A%0D%0A" + message + "%0D%0A%0D%0AYou may contact me at " + email + "%0D%0A%0D%0A%0D%0AThank you,%0D%0A" + name + "%0D%0A%0D%0A";
-  window.location.href = "mailto:zhiqiang.li017@gmail.com?subject=" + subject + "&body=" + body;
-})
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('btn');
+  if (!btn) {return; } // safety check
+  btn.addEventListener('click', e => {
+    e.preventDefault();  // stops any default form submit
 
+    const name    = document.getElementById('name').value.trim();
+    const email   = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const bodyText = `
+Hello Zhiqiang,
+
+${message}
+
+You may contact me at ${email}
+
+
+
+Thank you,
+${name}
+`.trim();
+    const mailtoLink = [
+      'mailto:zhiqiang.li017@gmail.com',
+      '?subject=' + encodeURIComponent(subject),
+      '&body='    + encodeURIComponent(bodyText)
+    ].join('');
+
+    console.log('Mailto URL:', mailtoLink);
+    window.location.href = mailtoLink;
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('.about-image');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      // grab individual delay
+      const delay = entry.target.dataset.delay || 0;
+      entry.target.style.setProperty('--delay', `${delay}ms`);
+
+      if (entry.isIntersecting) {
+        // slide in when ≥1px (threshold:0) is visible
+        entry.target.classList.add('slide-in');
+      } else {
+        // slide back out when it leaves
+        entry.target.classList.remove('slide-in');
+      }
+    });
+  }, {
+    threshold: 0    // fire as soon as any part is in/out
+  });
+
+  // assign delays & start observing
+  images.forEach((img, i) => {
+    // auto‐calculate if you prefer:
+    // img.dataset.delay = i * 200;
+    observer.observe(img);
+  });
+});
 
 
 // Get the video

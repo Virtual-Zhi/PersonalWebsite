@@ -274,7 +274,15 @@ a.no-underline:hover {
 }
 
 .about-image {
-  width: 30%;
+  opacity: 0;
+  transform: translateY(70%);
+  transition: opacity    1s ease-out var(--delay, 0ms),
+              transform  1s ease-out var(--delay, 0ms);
+              width: 30%;
   height: auto;
   border-radius: 10px;
+}
+.about-image.slide-in {
+  opacity: 1;
+  transform: translateY(0);
 }
