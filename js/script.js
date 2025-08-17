@@ -4,7 +4,7 @@ window.addEventListener('scroll', function () {
   // current scroll position
   const currentScrollPos = window.pageYOffset;
 
-  if (prevScrollPos > currentScrollPos) {
+  if (prevScrollPos >= currentScrollPos) {
     // user has scrolled up
     //document.querySelector('header').classList.add('show');
     document.querySelector('.navbar').classList.add('show');
@@ -14,7 +14,7 @@ window.addEventListener('scroll', function () {
     document.querySelector('.navbar').classList.remove('show');
   }
 
-  if (prevScrollPos <= 0 || currentScrollPos <= 0) {
+  if (currentScrollPos <= 0) {
     document.querySelector('.navbar').classList.remove('show');
   }
 
@@ -25,7 +25,14 @@ window.addEventListener('scroll', function () {
 
 if (document.getElementById('my-work-link')) {
   document.getElementById('my-work-link').addEventListener('click', () => {
-    document.getElementById('my-work-section').scrollIntoView({ behavior: "smooth" })
+    const workSection = document.getElementById('my-work-section');
+    const offset = 50;  
+    const scrollToPosition = workSection.offsetTop - offset;
+    
+    window.scrollTo({
+        top: scrollToPosition, 
+        behavior: "smooth"
+    });
     document.querySelector('.navbar').classList.remove('show');
   })
 }
@@ -34,7 +41,15 @@ var aboutmeButtons = document.getElementsByClassName('about-me-link');
 
 for (let i = 0; i < aboutmeButtons.length; i++) {
   aboutmeButtons[i].addEventListener("click", function () {
-    document.getElementById('about-section').scrollIntoView({ behavior: "smooth" })
+    const aboutSection = document.getElementById('about-section');
+    const offset = 100;  
+    const scrollToPosition = aboutSection.offsetTop - offset;
+
+    window.scrollTo({
+        top: scrollToPosition,
+        behavior: "smooth"
+    });
+
     document.querySelector('.navbar').classList.remove('show');
   })
 }

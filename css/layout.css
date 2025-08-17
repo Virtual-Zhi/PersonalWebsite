@@ -108,6 +108,12 @@ body {
   flex-basis: 50%;
 }
 
+.links-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
 
 
 
@@ -156,9 +162,12 @@ body {
 
 .artProjects {
   display: flex;
-  gap: 34px 16px;
+  gap: 34px 50px;
   flex-direction: row;
-  max-width: calc((100% - 12px));
+  max-width: calc((100% - 500px));
+  align-self: center;
+  object-fit: contain;
+  aspect-ratio: 16/9;
 }
 
 /* Project Cards */
@@ -173,9 +182,10 @@ body {
 .art-text-container {
   display: flex;
   flex-direction: column;
-  max-width: calc((100% - 12px)/2);
-  max-height: 2%;
-  gap: 5px;
+  /* max-width: calc((100% - 12px)/2);
+  max-height: 2%; */
+  width: 50%;
+  gap: 10px;
   align-self: baseline;
 }
 
@@ -317,10 +327,26 @@ div.contactPage {
 }
 
 /* NEEDS FIXING RN*/
+
+@media only screen and (max-width: 4000px) {
+  #main-content {
+    margin: 50px 275px;
+  }
+
+  .portfolio-header-image {
+    width: 85%;
+    height: 25rem;
+    display: block;
+    box-shadow: 10px 10px 15px 7px #8a919c;
+    border-radius: 72% 28% 77% 23% / 18% 79% 21% 82%;
+    object-fit: cover;
+    /* object-position: contain; */
+  }
+}
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1600px) {
   #main-content {
-    margin: 50px 240px;
+    margin: 50px 250px;
   }
 
   .portfolio-header-image {
@@ -354,7 +380,7 @@ div.contactPage {
 /* Large devices (laptops/desktops, 1000px and below) */
 @media only screen and (max-width: 1000px) {
   #main-content {
-    margin: 90px 75px;
+    margin: 90px 135px;
   }
 
   .portfolio-header-image {
@@ -371,7 +397,7 @@ div.contactPage {
 /* Small devices (portrait tablets and large phones, 800px and below) */
 @media only screen and (max-width: 800px) {
   #main-content {
-    margin: 30px 50px;
+    margin: 30px 120px;
   }
 
   #portfolio-header {

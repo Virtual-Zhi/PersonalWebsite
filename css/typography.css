@@ -95,12 +95,28 @@ body {
 }
 
 .art-project-card-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: horizontal;
+  display: -webkit-box;  /* Needed for -webkit-line-clamp */
+  -webkit-line-clamp: 4; /* Limit text to 4 lines */
+  -webkit-box-orient: vertical;  /* Correct direction for multiline clamping */
+  overflow: hidden;  /* Hide overflowing text */
+  text-overflow: ellipsis;  /* Add ellipsis when text is truncated */
+  font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 7%;
+  font-size: clamp(14px, 2vw, 18px);  /* Font size adjusts between 14px and 18px */
 }
+
+@media (min-width: 1600px) {  /* For larger screens (like desktops) */
+  .art-project-card-text {
+    display: block;  /* Disable line clamp on larger screens */
+    -webkit-line-clamp: unset;  /* Remove clamping */
+    overflow: visible;  /* Allow overflow if the text fits */
+    text-overflow: unset;  /* Remove ellipsis on large screens */
+  }
+}
+
 
 .project-title {
   overflow: hidden;
