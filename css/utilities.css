@@ -31,7 +31,8 @@ a.icon-link:hover {
 /* Navbar Styling */
 .navbar {
   display: flex;
-  justify-content: space-between; /* Keeps space between nav-title and buttons container */
+  justify-content: space-between;
+  /* Keeps space between nav-title and buttons container */
   align-items: center;
   padding: 30px 5%;
   position: relative;
@@ -69,14 +70,17 @@ a.icon-link:hover {
 
 .navButton-container {
   display: flex;
-  gap: 10px; /* Adjust the gap between buttons */
-  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px;
+  /* Adjust the gap between buttons */
+  justify-content: flex-end;
+  /* Align buttons to the right */
   align-items: center;
 }
 
 .navButton {
   padding: 8px 16px;
-  margin-left: 10px; /* Reduced margin to ensure buttons stay close */
+  margin-left: 10px;
+  /* Reduced margin to ensure buttons stay close */
   border: 3px solid #141414;
   border-radius: 50px;
   color: black;
@@ -276,13 +280,61 @@ a.no-underline:hover {
 .about-image {
   opacity: 0;
   transform: translateY(70%);
-  transition: opacity    1s ease-out var(--delay, 0ms),
-              transform  1s ease-out var(--delay, 0ms);
-              width: 30%;
+  transition: opacity 1s ease-out var(--delay, 0ms),
+    transform 1s ease-out var(--delay, 0ms);
+  width: 30%;
   height: auto;
   border-radius: 10px;
 }
+
 .about-image.slide-in {
   opacity: 1;
   transform: translateY(0);
+}
+
+.about-section-content {
+  opacity: 0;
+  transform: translateX(70%);
+  transition: opacity 1s ease-out var(--delay, 0ms),
+    transform 1s ease-out var(--delay, 0ms);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.about-section-content.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-header-text {
+  opacity: 0;
+  transform: translateX(-70%);
+  transition: opacity 1s ease-out var(--delay, 0ms),
+    transform 1s ease-out var(--delay, 0ms);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.about-header-text.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* cursor trail */
+.trail {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  border-radius: 0%;
+  pointer-events: none;
+  opacity: 0.9;
+  transform: translate(-50%, -50%);
+  animation: fadeOut 0.8s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
 }

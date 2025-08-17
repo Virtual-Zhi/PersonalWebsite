@@ -54,12 +54,12 @@ function topFunction() {
 
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('btn');
-  if (!btn) {return; } // safety check
+  if (!btn) { return; } // safety check
   btn.addEventListener('click', e => {
     e.preventDefault();  // stops any default form submit
 
-    const name    = document.getElementById('name').value.trim();
-    const email   = document.getElementById('email').value.trim();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
     const subject = document.getElementById('subject').value.trim();
     const message = document.getElementById('message').value.trim();
     const bodyText = `
@@ -77,7 +77,7 @@ ${name}
     const mailtoLink = [
       'mailto:zhiqiang.li017@gmail.com',
       '?subject=' + encodeURIComponent(subject),
-      '&body='    + encodeURIComponent(bodyText)
+      '&body=' + encodeURIComponent(bodyText)
     ].join('');
 
     console.log('Mailto URL:', mailtoLink);
@@ -88,7 +88,7 @@ ${name}
 
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('.about-image');
-
+  const content = document.querySelector('.about-section-content');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       // grab individual delay
@@ -107,12 +107,19 @@ document.addEventListener('DOMContentLoaded', () => {
     threshold: 0    // fire as soon as any part is in/out
   });
 
+  observer.observe(content);
+  observer.observe(document.getElementById("about-header-text"));
+
   // assign delays & start observing
   images.forEach((img, i) => {
     // auto‐calculate if you prefer:
     // img.dataset.delay = i * 200;
     observer.observe(img);
   });
+
+
+
+
 });
 
 

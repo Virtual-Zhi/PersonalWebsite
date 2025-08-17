@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="./css/utilities.css">
 
   <script defer src="./js/script.js"></script>
+  <script defer src="./js/util.js"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Teko:wght@300..700&display=swap"
@@ -22,6 +24,7 @@
 </head>
 
 <body>
+
   <!-- NAVBAR -->
   <div class="navbar" id="title">
     <a class="nav-title-link" id="title-link" , onclick="topFunction()">
@@ -29,24 +32,25 @@
 
     </a>
     <div class="navButton-container">
-      <a class="navButton about-me-link">
-        <span class="button-text">About Me</span>
+      <a class="navButton" target="_blank" href="https://www.linkedin.com/in/li-zhiqiang/">
+        <span class="button-text">LinkedIn</span>
+      </a>
+      <a class="navButton">
+        <span class="button-text">Resume</span>
       </a>
       <a class="navButton" href="project-pages/contactPage.html">
         <span class="button-text">Contact Me</span>
       </a>
     </div>
   </div>
+  <div class="header finisher-header" style="height: 800px;">
 
-  <!-- MAIN PAGE CONTENT -->
-  <div id="main-content">
 
     <!-- PORTFOLIO HEADER -->
     <div id="portfolio-header">
       <div id="portfolio-header-image-container">
         <img src="./assets/images/creatorPic.jpg" class="portfolio-header-image">
-        <a class="no-underline" target="_blank"
-          href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+        <a class="no-underline" target="_blank" href="https://www.linkedin.com/in/li-zhiqiang/">
           <span class="image-caption">Unemployed #170</span>
         </a>
       </div>
@@ -72,12 +76,17 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- MAIN PAGE CONTENT -->
+  <div id="main-content" class="pop-out-div">
+
 
     <!-- ABOUT SECTION -->
 
     <div id="about-section">
-      <span class="subtitle-header-text">My Background / About Me</span>
-      <div class="about-section-content">
+      <span class="about-header-text" id="about-header-text" data-delay="0">My Background / About Me</span>
+      <div class="about-section-content" data-delay="0">
         <div class="body-text"><b>Hello, my name is Zhiqiang Li, but you can call me Phillip.</b></div>
         <div class="body-text-description">Starting at a young age of 8, I began my endeavor into the computer world,
           writing up code in game engines like Unity, Roblox, and Scratch. I fell in love with making and testing
@@ -92,11 +101,14 @@
           front-end. Some of the topics that peek my interest is virtual/augmented
           reality, AI, game development, and graphical design.
           <br><br>
-          On a side note, some of my hobbies include playing tennis, playing video games, and drawing/art (scroll to end to view more). I also
-          enjoy watching anime and reading manga, as well as listening to music. My uttermost favorite though has to be exploring the world and trying out the different
+          On a side note, some of my hobbies include playing tennis, playing video games, and drawing/art (scroll to end
+          to view more). I also
+          enjoy watching anime and reading manga, as well as listening to music. My uttermost favorite though has to be
+          exploring the world and trying out the different
           cultures and foods that each place has to offer.
           <br><br>
-          <strong>Note:</strong> I am currently looking for internships and co-ops in the software engineering field and is open to connect with anyone!
+          <strong>Note:</strong> I am currently looking for internships and co-ops in the software engineering field and
+          is open to connect with anyone!
           <div class="about-image-content">
             <img src="./assets/images/tennisCreatorPic.jpg" class="about-image" data-delay="0">
             <img src="./assets/images/foodieImg.jpg" class="about-image" data-delay="200">
@@ -119,9 +131,10 @@
           <img src="./assets/images/games/Text-RPG.png" class="project-image">
           <div class="project-card-text-container">
             <div class="subheader-text project-title">Text-RPG</div>
-            <div class="body-text project-card-text">This JAVA project uses JAVAFx and heavy data structures to create a replica of MMORPGS, where
+            <div class="body-text project-card-text">This JAVA project uses JAVAFx and heavy data structures to create a
+              replica of MMORPGS, where
               a player
-              can explore a world, fight monsters, and level up. 
+              can explore a world, fight monsters, and level up.
             </div>
           </div>
           <a class="button" href="./project-pages/videoPage.html" target="_blank">
@@ -160,7 +173,8 @@
           <img src="./assets/images/sketchbook.jpeg" class="project-image">
           <div class="project-card-text-container">
             <div class="subheader-text project-title">Circus</div>
-            <div class="body-text project-card-text">Theoretical project on the use of the fastest sorting algorithms (quick-sort, etc...) and lowest
+            <div class="body-text project-card-text">Theoretical project on the use of the fastest sorting algorithms
+              (quick-sort, etc...) and lowest
               space complexity to sort a list of circus performers by attributes.
             </div>
           </div>
@@ -206,10 +220,11 @@
           <img src="./assets/images/tennisStats.png" class="project-image">
           <div class="project-card-text-container">
             <div class="subheader-text project-title">Tennis-Statistics-App</div>
-            <div class="body-text project-card-text">A statistic tracker for coaches to track player's shot percentages, notes, videos, and matches to determine player progress.</div>
+            <div class="body-text project-card-text">A statistic tracker for coaches to track player's shot percentages,
+              notes, videos, and matches to determine player progress.</div>
           </div>
-          <a class="button" href="./project-pages/project-template.html">
-            <span class="button-text">Read More</span>
+          <a class="button" href="./project-pages/tennisAppPage.html">
+            <span class="button-text">View Project</span>
             <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
           </a>
         </div>
@@ -225,7 +240,8 @@
           <div class="project-card-text-container">
             <div class="subheader-text project-title">Art of Eternity</div>
             <div class="body-text project-card-text">
-              A 3D game made in Roblox Studio using Lua and the Roblox API, where the player can explore a world, fight monsters, and level up through the means of cultivating their own
+              A 3D game made in Roblox Studio using Lua and the Roblox API, where the player can explore a world, fight
+              monsters, and level up through the means of cultivating their own
               skills.
             </div>
           </div>
@@ -245,7 +261,8 @@
           </div>
           <div class="project-card-text-container">
             <div class="subheader-text project-title">Blox Trials</div>
-            <div class="body-text project-card-text">Upcoming 3D roblox game made using Lua and Roblox API, focuses heavily on corountine (multi-threading) for an escape room adventure
+            <div class="body-text project-card-text">Upcoming 3D roblox game made using Lua and Roblox API, focuses
+              heavily on corountine (multi-threading) for an escape room adventure
               type experience.
             </div>
           </div>
@@ -258,7 +275,7 @@
     </div>
     <br>
     <br>
-
+    <!-- Art -->
     <div class="art">
       <a class="button" href="project-pages\artPage.html">
         <span class="button-text">Check out my art projects!</span>
@@ -285,6 +302,7 @@
     </a>
   </div>
 
+  <script src="./js/finisher-header.es5.min.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -15,28 +15,39 @@
   <meta charset="utf-8">
 
   <link rel="icon" href="../assets/images/1311.png" />
-  <title>Unemployables Portfolio</title>
+  <title>Tennis Stats App</title>
   <meta name="description" content="A portfolio template for the Unemployables community.">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <link rel="stylesheet" href="../css/videoCSS.css">
+  <link rel="stylesheet" href="../css/utilities.css">
   <link rel="stylesheet" href="../css/layout.css">
   <link rel="stylesheet" href="../css/typography.css">
-  <link rel="stylesheet" href="../css/utilities.css">
 
-  <script defer src="../js/script.js"></script>
+  <script def src="../js/videoScript.js"></script>
+  <script def src="../js/script.js"></script>
+  <script defer src="../js/util.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Teko:wght@300..700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <!-- NAVBAR -->
-  <div class="navbar">
-    <a class="nav-title-link" href="../index.html">
+  <div class="navbar" id="title">
+    <a class="nav-title-link" id="title-link" , onclick="topFunction()" href="../index.html">
+      <span class="nav-title">Zhiqiang Li</span>
 
-      <span class="nav-title">Portfolio Title</span>
-
-      <a class="button" href="mailto:whitevans.eth@gmail.com">
+    </a>
+    <div class="navButton-container">
+      <a class="navButton about-me-link" href="../index.html">
+        <span class="button-text">About Me</span>
+      </a>
+      <a class="navButton" href="../project-pages/contactPage.html">
         <span class="button-text">Contact Me</span>
       </a>
-    </a>
+    </div>
   </div>
 
   <!-- MAIN PAGE CONTENT -->
@@ -45,9 +56,11 @@
     <!-- PROJECT HEADER -->
     <div id="project-header">
 
-      <div class="main-title">Project Name</div>
-      <div class="body-text">A small description about the project goes here, get the reader hooked on the project and
-        tell them why they should continue to read this page. Give it a sweet tagline.</div>
+      <div class="main-title">Tennis Statistics Tracker</div>
+      <div class="body-text">As a tennis coach, the daily struggles of keeping track of players especially for a big
+        team continues.
+        This app will help organize this list of tracking and
+      </div>
       <image class="project-header-image" src="../assets/images/desktop.jpeg">
     </div>
 
