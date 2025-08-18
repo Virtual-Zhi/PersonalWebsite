@@ -8,6 +8,7 @@ html {
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
 
 /* Main Page Layout */
 
@@ -422,7 +424,7 @@ div.contactPage {
 /* Small devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
   #main-content {
-    margin: 20px 100px;
+    margin: 20px 65px;
   }
 
   .project-card {
@@ -431,7 +433,7 @@ div.contactPage {
 
   .portfolio-header-image {
     width: 50%;
-    height: 25rem;
+    height: 20rem;
     display: block;
     box-shadow: 10px 10px 15px 7px #8a919c;
     border-radius: 72% 28% 77% 23% / 18% 79% 21% 82%;
