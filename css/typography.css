@@ -9,7 +9,7 @@ body {
 }
 
 .button-text {
-  font-size: 14px;
+  font-size: 0.9vw;
   font-weight: 700;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .main-title {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
   font-family: "Teko", serif;
   font-optical-sizing: auto;
@@ -105,7 +105,7 @@ body {
   font-style: normal;
   font-weight: 300;
   margin-top: 7%;
-  font-size: clamp(14px, 2vw, 18px);  /* Font size adjusts between 14px and 18px */
+  font-size: 0.8vw;  /* Font size adjusts between 14px and 18px */
 }
 
 @media (min-width: 1600px) {  /* For larger screens (like desktops) */
@@ -114,9 +114,19 @@ body {
     -webkit-line-clamp: unset;  /* Remove clamping */
     overflow: visible;  /* Allow overflow if the text fits */
     text-overflow: unset;  /* Remove ellipsis on large screens */
+    font-size: 1vw;
   }
 }
 
+@media (min-width: 1000px) {  /* For larger screens (like desktops) */
+  .art-project-card-text {
+    display: block;  /* Disable line clamp on larger screens */
+    -webkit-line-clamp: unset;  /* Remove clamping */
+    overflow: visible;  /* Allow overflow if the text fits */
+    text-overflow: unset;  /* Remove ellipsis on large screens */
+
+  }
+}
 
 .project-title {
   overflow: hidden;
