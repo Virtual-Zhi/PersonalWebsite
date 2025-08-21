@@ -135,3 +135,26 @@ body {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
+
+@media only screen and (max-width: 600px) {
+  .button-text {
+    font-size: 2.5vw;
+  }
+  .about-header-text {
+  font-size: 45px;
+  align-items: center;
+  justify-content: center;
+  object-position: center;
+}
+.body-text-description {
+  font-size: 12px;
+  font-weight: 300;
+  padding-top: 5px;
+  padding-bottom: 70px;
+  letter-spacing: 1px;
+  font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  max-width: 100%;
+}
+}

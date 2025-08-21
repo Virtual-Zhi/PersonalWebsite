@@ -74,7 +74,7 @@ body {
 
 #portfolio-header {
   padding-top: 5%;
-  margin-left: 15%;
+  margin-left: 20%;
   padding-bottom: 30%;
   display: flex;
   flex-direction: row;
@@ -90,6 +90,7 @@ body {
   gap: 20px;
   flex-basis: 45%;
   align-items: center;
+  object-position: cent;
   aspect-ratio: 16/9;
 }
 
@@ -155,6 +156,7 @@ body {
   flex-direction: column;
   gap: 16px;
 }
+
 
 .projects-container {
   display: flex;
@@ -332,7 +334,8 @@ div.contactPage {
 
 @media only screen and (max-width: 4000px) {
   #main-content {
-    margin: 50px 275px;
+    margin: 50px 290px;
+    align-items: center;
   }
 
   .portfolio-header-image {
@@ -419,6 +422,15 @@ div.contactPage {
     object-fit: cover;
     /* object-position: contain; */
   }
+  .artProjects {
+  display: flex;
+  gap: 34px 50px;
+  flex-direction: row;
+  max-width: 100%;
+  align-self: center;
+  object-fit: contain;
+  aspect-ratio: 16/9;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and below) */
@@ -438,6 +450,33 @@ div.contactPage {
     box-shadow: 10px 10px 15px 7px #8a919c;
     border-radius: 72% 28% 77% 23% / 18% 79% 21% 82%;
     object-fit: cover;
+    justify-content: center;
     /* object-position: contain; */
+  }
+
+  #portfolio-header {
+    margin-left: 0%;
+    align-items: center;
+  }
+  #portfolio-header-text-container {
+    align-items: center;
+    margin-left: 5%;
+  }
+
+  .about-image-content {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .artProjects {
+  display: flex;
+  gap: 34px 50px;
+  flex-direction: row;
+  max-width: 100%;
+  align-self: center;
+  object-fit: contain;
+  aspect-ratio: 16/9;
   }
 }

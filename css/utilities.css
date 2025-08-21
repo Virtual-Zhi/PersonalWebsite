@@ -338,3 +338,17 @@ a.no-underline:hover {
     transform: translate(-50%, -50%) scale(0.5);
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+.about-image {
+  opacity: 0;
+  transform: translateY(70%);
+  transition: opacity 1s ease-out var(--delay, 0ms),
+    transform 1s ease-out var(--delay, 0ms);
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+}
