@@ -121,7 +121,6 @@ body {
 
 
 /* About Section */
-
 #about-section {
   display: flex;
   flex-direction: column;
@@ -129,7 +128,6 @@ body {
   gap: 16px;
 
 }
-
 
 
 .about-section-content {
@@ -347,6 +345,8 @@ div.contactPage {
     object-fit: cover;
     /* object-position: contain; */
   }
+
+ 
 }
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1600px) {
@@ -363,6 +363,18 @@ div.contactPage {
     object-fit: cover;
     /* object-position: contain; */
   }
+
+   #portfolio-header {
+  padding-top: 5%;
+  margin-left: 15%;
+  padding-bottom: 30%;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+  width: fit-content;
+
+}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and below) */
