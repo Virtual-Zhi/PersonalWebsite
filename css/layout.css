@@ -392,6 +392,18 @@ div.contactPage {
     object-fit: cover;
     /* object-position: contain; */
   }
+
+    #portfolio-header {
+  padding-top: 5%;
+  margin-left: 2.5%;
+  padding-bottom: 30%;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+  width: fit-content;
+
+}
 }
 
 /* Large devices (laptops/desktops, 1000px and below) */
@@ -409,6 +421,8 @@ div.contactPage {
     object-fit: cover;
     /* object-position: contain; */
   }
+
+  
 }
 
 /* Small devices (portrait tablets and large phones, 800px and below) */
@@ -443,6 +457,8 @@ div.contactPage {
   object-fit: contain;
   aspect-ratio: 16/9;
   }
+
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and below) */

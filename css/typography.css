@@ -114,7 +114,7 @@ body {
     -webkit-line-clamp: unset;  /* Remove clamping */
     overflow: visible;  /* Allow overflow if the text fits */
     text-overflow: unset;  /* Remove ellipsis on large screens */
-    font-size: 1vw;
+    font-size: 1.25vw;
   }
 }
 
@@ -124,7 +124,7 @@ body {
     -webkit-line-clamp: unset;  /* Remove clamping */
     overflow: visible;  /* Allow overflow if the text fits */
     text-overflow: unset;  /* Remove ellipsis on large screens */
-
+    font-size: 1vw;
   }
 }
 
@@ -157,4 +157,11 @@ body {
   font-style: normal;
   max-width: 100%;
 }
+.art-project-card-text {
+    display: block;  /* Disable line clamp on larger screens */
+    -webkit-line-clamp: unset;  /* Remove clamping */
+    overflow: visible;  /* Allow overflow if the text fits */
+    text-overflow: unset;  /* Remove ellipsis on large screens */
+    font-size: 1.15vw;
+  }
 }

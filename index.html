@@ -24,6 +24,40 @@
 </head>
 
 <body>
+  <!-- UTIL -->
+  <div class="modal" id="contactModal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <div class="contactPage">
+      <div class="header-text">Contact Me</div>
+      <div class="contactForm">
+        <form>
+          <h2>Send Message</h2>
+          <div class="inputBox">
+            <input type="text" id="name" required="required">
+            <span>Full Name</span>
+          </div>
+          <div class="inputBox">
+            <input type="text" id="email" required="required">
+            <span>Email</span>
+          </div>
+          <div class="inputBox">
+            <input type="text" id="subject" required="required">
+            <span>Subject</span>
+          </div>
+          <div class="inputBox">
+            <textarea required="required" id="message"></textarea>
+            <span>Type your Message...</span>
+          </div>
+          <div class="inputBox">
+            <input type="submit" name="" value="Send" id="btn">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
   <!-- NAVBAR -->
   <div class="navbar" id="title">
     <a class="nav-title-link" id="title-link" onclick="topFunction()">
@@ -36,7 +70,7 @@
       <a class="navButton" target="_blank" href="./assets/images/ZLI2028_RESUME12.pdf">
         <span class="button-text">Resume</span>
       </a>
-      <a class="navButton" href="project-pages/contactPage.html">
+      <a class="navButton" id="openModalBtn">
         <span class="button-text">Contact Me</span>
       </a>
     </div>
@@ -221,7 +255,7 @@
             <div class="body-text project-card-text">A statistic tracker for coaches to track player's shot percentages,
               notes, videos, and matches to determine player progress.</div>
           </div>
-          <a class="button" href="./project-pages/tennisAppPage.html">
+          <a class="button" href="https://github.com/Virtual-Zhi/Tennis_App" target="_blank">
             <span class="button-text">View Project</span>
             <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
           </a>
@@ -295,8 +329,8 @@
       <image src="./assets/icons/instagram.svg" class="footer-icon" />
     </a>
 
-    <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-      <image src="./assets/icons/twitter.svg" class="footer-icon" />
+    <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/li-zhiqiang/">
+      <image src="./assets/icons/LinkedInLocked.svg" class="footer-icon" />
     </a>
 
     <a class="icon-link" href="mailto:zhiqiang.li017@gmail.com">
