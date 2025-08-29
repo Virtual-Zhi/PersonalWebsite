@@ -206,11 +206,9 @@ body {
 
 .project-image {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+  height: 14vw; /* or any specific height you need */
+  object-fit: cover; /* This will make sure all images fill the space, cropping where necessary */
 }
-
 
 .slideshow-container {
   width: 100%;
@@ -289,6 +287,12 @@ div.art {
   margin-top: 70px;
   margin-bottom: 50px;
 }
+
+ .art-project-image {
+    width: 100%;
+    height: auto; /* or any specific height you need */
+    object-fit: contain; /* This will make sure all images fill the space, cropping where necessary */
+  }
 
 div.contactPage {
   position: relative;
@@ -375,6 +379,8 @@ div.contactPage {
   width: fit-content;
 
 }
+
+ 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and below) */
@@ -506,5 +512,11 @@ div.contactPage {
   align-self: center;
   object-fit: contain;
   aspect-ratio: 16/9;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto; /* or any specific height you need */
+    object-fit: cover; /* This will make sure all images fill the space, cropping where necessary */
   }
 }

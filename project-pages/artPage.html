@@ -23,6 +23,40 @@
 </head>
 
 <body>
+
+  <div class="modal" id="contactModal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <div class="contactPage">
+      <div class="header-text">Contact Me</div>
+      <div class="contactForm">
+        <form>
+          <h2>Send Message</h2>
+          <div class="inputBox">
+            <input type="text" id="name" required="required">
+            <span>Full Name</span>
+          </div>
+          <div class="inputBox">
+            <input type="text" id="email" required="required">
+            <span>Email</span>
+          </div>
+          <div class="inputBox">
+            <input type="text" id="subject" required="required">
+            <span>Subject</span>
+          </div>
+          <div class="inputBox">
+            <textarea required="required" id="message"></textarea>
+            <span>Type your Message...</span>
+          </div>
+          <div class="inputBox">
+            <input type="submit" name="" value="Send" id="btn">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
   <div class="navbar" id="title">
     <a class="nav-title-link" id="title-link" , onclick="topFunction()" href="../index.html">
       <span class="nav-title">Zhiqiang Li</span>
@@ -32,7 +66,7 @@
       <a class="navButton about-me-link" href="../index.html">
         <span class="button-text">About Me</span>
       </a>
-      <a class="navButton" href="../project-pages/contactPage.html">
+      <a class="navButton" id="openModalBtn">
         <span class="button-text">Contact Me</span>
       </a>
     </div>
@@ -47,7 +81,7 @@
   <div id="main-Artcontent">
     <div class="artProjects pop-out-div">
       <div class="artProject-card">
-        <img src="../assets/images/SailingFisher.jpg" class="project-image">
+        <img src="../assets/images/SailingFisher.jpg" class="art-project-image">
       </div>
       <div class="art-text-container">
         <div class="subheader-text project-title">
@@ -71,7 +105,7 @@
     <!--Part 2-->
     <div class="artProjects pop-out-div">
       <div class="artProject-card">
-        <img src="../assets/images/RiverInForest.jpg" class="project-image">
+        <img src="../assets/images/RiverInForest.jpg" class="art-project-image">
       </div>
       <div class="art-text-container">
         <div class="subheader-text project-title">
@@ -96,7 +130,7 @@
     <!--Part 3-->
     <div class="artProjects pop-out-div">
       <div class="artProject-card">
-        <img src="../assets/images/ocean_waves.jpg" class="project-image">
+        <img src="../assets/images/ocean_waves.jpg" class="art-project-image">
       </div>
       <div class="art-text-container">
         <div class="subheader-text project-title">
