@@ -95,36 +95,102 @@ body {
 }
 
 .art-project-card-text {
-  display: -webkit-box;  /* Needed for -webkit-line-clamp */
-  -webkit-line-clamp: 4; /* Limit text to 4 lines */
-  -webkit-box-orient: vertical;  /* Correct direction for multiline clamping */
-  overflow: hidden;  /* Hide overflowing text */
-  text-overflow: ellipsis;  /* Add ellipsis when text is truncated */
+  display: -webkit-box;
+  /* Needed for -webkit-line-clamp */
+  -webkit-line-clamp: 4;
+  /* Limit text to 4 lines */
+  -webkit-box-orient: vertical;
+  /* Correct direction for multiline clamping */
+  overflow: hidden;
+  /* Hide overflowing text */
+  text-overflow: ellipsis;
+  /* Add ellipsis when text is truncated */
   font-family: "Lexend", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 300;
   margin-top: 7%;
-  font-size: 0.8vw;  /* Font size adjusts between 14px and 18px */
+  font-size: 0.8vw;
+  /* Font size adjusts between 14px and 18px */
 }
 
-@media (min-width: 1600px) {  /* For larger screens (like desktops) */
+@media (max-width: 1600px) {
+
+  /* For larger screens (like desktops) */
   .art-project-card-text {
-    display: block;  /* Disable line clamp on larger screens */
-    -webkit-line-clamp: unset;  /* Remove clamping */
-    overflow: visible;  /* Allow overflow if the text fits */
-    text-overflow: unset;  /* Remove ellipsis on large screens */
-    font-size: 1.25vw;
+    display: block;
+    /* Disable line clamp on larger screens */
+    -webkit-line-clamp: unset;
+    /* Remove clamping */
+    overflow: visible;
+    /* Allow overflow if the text fits */
+    text-overflow: unset;
+    /* Remove ellipsis on large screens */
+    font-size: 1vw;
   }
 }
 
-@media (min-width: 1000px) {  /* For larger screens (like desktops) */
+@media (max-width: 1400px) {
+
+  /* For larger screens (like desktops) */
   .art-project-card-text {
-    display: block;  /* Disable line clamp on larger screens */
-    -webkit-line-clamp: unset;  /* Remove clamping */
-    overflow: visible;  /* Allow overflow if the text fits */
-    text-overflow: unset;  /* Remove ellipsis on large screens */
-    font-size: 1vw;
+    display: block;
+    /* Disable line clamp on larger screens */
+    -webkit-line-clamp: unset;
+    /* Remove clamping */
+    overflow: visible;
+    /* Allow overflow if the text fits */
+    text-overflow: unset;
+    /* Remove ellipsis on large screens */
+    font-size: 0.9vw;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  /* For larger screens (like desktops) */
+  .art-project-card-text {
+    display: block;
+    /* Disable line clamp on larger screens */
+    -webkit-line-clamp: unset;
+    /* Remove clamping */
+    overflow: visible;
+    /* Allow overflow if the text fits */
+    text-overflow: unset;
+    /* Remove ellipsis on large screens */
+    font-size: 0.8vw;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  /* For larger screens (like desktops) */
+  .art-project-card-text {
+    display: block;
+    /* Disable line clamp on larger screens */
+    -webkit-line-clamp: unset;
+    /* Remove clamping */
+    overflow: visible;
+    /* Allow overflow if the text fits */
+    text-overflow: unset;
+    /* Remove ellipsis on large screens */
+    font-size: 0.5vw;
+  }
+}
+
+@media (max-width: 800px) {
+
+  /* For larger screens (like desktops) */
+  .art-project-card-text {
+    display: block;
+    /* Disable line clamp on larger screens */
+    -webkit-line-clamp: unset;
+    /* Remove clamping */
+    overflow: visible;
+    /* Allow overflow if the text fits */
+    text-overflow: unset;
+    /* Remove ellipsis on large screens */
+    font-size: 0.6vw;
   }
 }
 
@@ -140,28 +206,35 @@ body {
   .button-text {
     font-size: 2.5vw;
   }
+
   .about-header-text {
-  font-size: 45px;
-  align-items: center;
-  justify-content: center;
-  object-position: center;
-}
-.body-text-description {
-  font-size: 12px;
-  font-weight: 300;
-  padding-top: 5px;
-  padding-bottom: 70px;
-  letter-spacing: 1px;
-  font-family: "Lexend", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  max-width: 100%;
-}
-.art-project-card-text {
-    display: block;  /* Disable line clamp on larger screens */
-    -webkit-line-clamp: unset;  /* Remove clamping */
-    overflow: visible;  /* Allow overflow if the text fits */
-    text-overflow: unset;  /* Remove ellipsis on large screens */
+    font-size: 45px;
+    align-items: center;
+    justify-content: center;
+    object-position: center;
+  }
+
+  .body-text-description {
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 5px;
+    padding-bottom: 70px;
+    letter-spacing: 1px;
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    max-width: 100%;
+  }
+
+  .art-project-card-text {
+    display: block;
+    /* Disable line clamp on larger screens */
+    -webkit-line-clamp: unset;
+    /* Remove clamping */
+    overflow: visible;
+    /* Allow overflow if the text fits */
+    text-overflow: unset;
+    /* Remove ellipsis on large screens */
     font-size: 1.15vw;
   }
 }
