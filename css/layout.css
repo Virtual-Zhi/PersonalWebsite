@@ -206,8 +206,10 @@ body {
 
 .project-image {
   width: 100%;
-  height: 14vw; /* or any specific height you need */
-  object-fit: cover; /* This will make sure all images fill the space, cropping where necessary */
+  height: 14vw;
+  /* or any specific height you need */
+  object-fit: cover;
+  /* This will make sure all images fill the space, cropping where necessary */
 }
 
 .slideshow-container {
@@ -288,11 +290,13 @@ div.art {
   margin-bottom: 50px;
 }
 
- .art-project-image {
-    width: 100%;
-    height: auto; /* or any specific height you need */
-    object-fit: contain; /* This will make sure all images fill the space, cropping where necessary */
-  }
+.art-project-image {
+  width: 100%;
+  height: auto;
+  /* or any specific height you need */
+  object-fit: contain;
+  /* This will make sure all images fill the space, cropping where necessary */
+}
 
 div.contactPage {
   position: relative;
@@ -350,8 +354,9 @@ div.contactPage {
     /* object-position: contain; */
   }
 
- 
+
 }
+
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1600px) {
   #main-content {
@@ -368,19 +373,19 @@ div.contactPage {
     /* object-position: contain; */
   }
 
-   #portfolio-header {
-  padding-top: 5%;
-  margin-left: 15%;
-  padding-bottom: 30%;
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
-  align-items: center;
-  width: fit-content;
+  #portfolio-header {
+    padding-top: 5%;
+    margin-left: 15%;
+    padding-bottom: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+    width: fit-content;
 
-}
+  }
 
- 
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and below) */
@@ -399,17 +404,17 @@ div.contactPage {
     /* object-position: contain; */
   }
 
-    #portfolio-header {
-  padding-top: 5%;
-  margin-left: 2.5%;
-  padding-bottom: 30%;
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
-  align-items: center;
-  width: fit-content;
+  #portfolio-header {
+    padding-top: 5%;
+    margin-left: 2.5%;
+    padding-bottom: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+    width: fit-content;
 
-}
+  }
 }
 
 /* Large devices (laptops/desktops, 1000px and below) */
@@ -428,7 +433,7 @@ div.contactPage {
     /* object-position: contain; */
   }
 
-  
+
 }
 
 /* Small devices (portrait tablets and large phones, 800px and below) */
@@ -454,14 +459,15 @@ div.contactPage {
     object-fit: cover;
     /* object-position: contain; */
   }
+
   .artProjects {
-  display: flex;
-  gap: 34px 50px;
-  flex-direction: row;
-  max-width: 100%;
-  align-self: center;
-  object-fit: contain;
-  aspect-ratio: 16/9;
+    display: flex;
+    gap: 34px 50px;
+    flex-direction: row;
+    max-width: 100%;
+    align-self: center;
+    object-fit: contain;
+    aspect-ratio: 16/9;
   }
 
 
@@ -492,6 +498,7 @@ div.contactPage {
     margin-left: 0%;
     align-items: center;
   }
+
   #portfolio-header-text-container {
     align-items: center;
     margin-left: 5%;
@@ -505,18 +512,20 @@ div.contactPage {
   }
 
   .artProjects {
-  display: flex;
-  gap: 34px 50px;
-  flex-direction: row;
-  max-width: 100%;
-  align-self: center;
-  object-fit: contain;
-  aspect-ratio: 16/9;
+    display: flex;
+    gap: 34px 50px;
+    flex-direction: row;
+    max-width: 100%;
+    align-self: center;
+    object-fit: contain;
+    aspect-ratio: 16/9;
   }
 
   .project-image {
     width: 100%;
-    height: auto; /* or any specific height you need */
-    object-fit: cover; /* This will make sure all images fill the space, cropping where necessary */
+    height: auto;
+    /* or any specific height you need */
+    object-fit: cover;
+    /* This will make sure all images fill the space, cropping where necessary */
   }
 }
