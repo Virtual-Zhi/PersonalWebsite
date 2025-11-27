@@ -132,10 +132,8 @@ body {
 
 @media (max-width: 1400px) {
 
-  /* For larger screens (like desktops) */
   .art-project-card-text {
     display: block;
-    /* Disable line clamp on larger screens */
     -webkit-line-clamp: unset;
     /* Remove clamping */
     overflow: visible;
